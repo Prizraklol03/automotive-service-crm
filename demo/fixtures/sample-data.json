@@ -1,0 +1,20 @@
+{
+  "notice": "Entirely synthetic portfolio fixture. Not derived from runtime or customer records.",
+  "client": {
+    "full_name": "Demo Customer 01",
+    "phone": "+7 000 000-00-01",
+    "email": "customer01@example.invalid",
+    "address": "1 Example Street, Example City"
+  },
+  "vehicle": {
+    "brand": "Example Motors",
+    "model": "Demo Sedan",
+    "vin": "SYNTHETIC-VEHICLE-01",
+    "plate": "DEMO-PLATE-01"
+  },
+  "order": {
+    "number": "DEMO-ORDER-0001",
+    "status": "new",
+    "comment": "Synthetic portfolio scenario; no real customer or service data."
+  }
+}

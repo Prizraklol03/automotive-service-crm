@@ -1,0 +1,13 @@
+alembic==1.16.5
+cryptography==45.0.6
+fastapi==0.116.1
+httpx==0.28.1
+pillow==11.2.1
+psycopg[binary]==3.2.9
+pydantic==2.11.7
+pydantic-settings==2.10.1
+python-docx==1.1.2
+python-multipart==0.0.20
+sqlalchemy==2.0.43
+tzdata==2025.3
+uvicorn[standard]==0.35.0
