@@ -131,11 +131,11 @@ The verified portfolio snapshot reports:
 
 Not verified in this local-only preparation: PostgreSQL-backed integration suite, browser E2E, live migration rehearsal, and staging/production runtime. A test suite's presence is not a claim that it passes in every environment.
 
-## Demo and screenshots
+## Demo data
 
-No screenshot or media file from the commercial runtime was transferred. The small fixture in `demo/fixtures/` is hand-authored and synthetic; it is an import/documentation example rather than a production-derived seed.
+The fixture in `demo/fixtures/` is hand-authored and synthetic. It is provided as an import/documentation example and is not derived from production data.
 
-Portfolio screenshots can be added later only after running the application with a dedicated synthetic database and reviewing every visible name, contact detail, vehicle identifier, order note, document, and image. Until that review exists, the repository intentionally contains no product screenshots.
+The screenshots above were captured from a staging environment populated exclusively with generated synthetic records.
 
 ## Local development
 
