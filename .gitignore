@@ -48,6 +48,8 @@ inspection_media/
 *.heic
 *.mov
 *.mp4
+!docs/screenshots/
+!docs/screenshots/*.png
 documents_templates/*
 !documents_templates/README.md
 

@@ -29,6 +29,40 @@ That separation is deliberate: a clean current tree does not make historical art
 
 These capabilities describe code present in this snapshot. They are not a claim that every deployment concern is included or that the snapshot is ready to operate as a hosted product.
 
+## Product preview
+
+> All screenshots below were captured from a staging environment populated exclusively with generated synthetic data. They contain no production or customer records.
+
+### Analytics
+
+Financial and operational metrics with profitability and period analysis.
+
+![Analytics dashboard](docs/screenshots/analytics.png)
+
+### Orders
+
+Order workflow with status filters, search, scheduling, and payment state.
+
+![Orders workspace](docs/screenshots/orders.png)
+
+### Calendar
+
+Service scheduling, deadlines, reminders, and category-aware calendar planning.
+
+![Service calendar](docs/screenshots/calendar.png)
+
+### Vehicles
+
+Vehicle registry with VIN/model search and customer-related records.
+
+![Vehicle registry](docs/screenshots/vehicles.png)
+
+### Clients
+
+Customer directory with contact search and related service information.
+
+![Client directory](docs/screenshots/clients.png)
+
 ## Architecture
 
 ```mermaid
@@ -87,7 +121,15 @@ These mechanisms reduce risk but do not constitute a security certification. Dep
 
 The repository includes backend tests for auth/session policy, privacy and encryption search, API/domain behavior, migrations, documents, analytics, payments, vehicle ownership, external leads, and PostgreSQL search semantics. Frontend tests cover feature behavior, routing/permissions, forms, state handling, UI contracts, and UTF-8 safeguards; Playwright configuration is also included.
 
-Verification results for the exported snapshot should be taken from the preparation report or reproduced locally. A test suite's presence is not a claim that it passes in every environment. PostgreSQL-dependent tests require an isolated local test database; browser E2E tests require their own configured test runtime.
+The verified portfolio snapshot reports:
+
+- Frontend: 49 test files / 165 tests passed.
+- Frontend type checking: passed.
+- Frontend production build: passed.
+- Backend: 296 tests collected; 47-test safe unit subset passed.
+- Alembic: one migration head.
+
+Not verified in this local-only preparation: PostgreSQL-backed integration suite, browser E2E, live migration rehearsal, and staging/production runtime. A test suite's presence is not a claim that it passes in every environment.
 
 ## Demo and screenshots
 
@@ -135,7 +177,7 @@ scripts/                 Safe quality and generic integration utilities
 
 ## Project scale
 
-The final sanitized tree contains **396** application source files, **29** backend API router modules, **31** SQLAlchemy model modules, **61** Alembic revisions, and **82** automated test files. These counts communicate repository scope only; they are not presented as a quality metric.
+The final sanitized tree contains **396** application source files, **29** non-`__init__.py` backend API router modules, **31** SQLAlchemy model modules, **61** Alembic revisions, and **82** automated test files. These counts communicate repository scope only; they are not presented as a quality metric.
 
 ## Current limitations
 
