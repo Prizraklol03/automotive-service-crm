@@ -1,5 +1,7 @@
 # Automotive Service CRM
 
+[English](README.md) | [Русский](README.ru.md)
+
 Automotive Service CRM is a sanitized portfolio mirror of a private commercial CRM project.  
 The primary development history remains private because it contains production-specific configuration, operational history and sensitive artifacts.
 
